@@ -4,7 +4,6 @@ from pathlib import Path
 from dotenv import load_dotenv
 from split_settings.tools import include
 
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(BASE_DIR / '.env')
 
@@ -21,7 +20,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'users.apps.UsersConfig'
 ]
+
+SIDE_PACKAGES = [
+    'widget_tweaks',
+]
+
+INSTALLED_APPS += SIDE_PACKAGES
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
