@@ -16,3 +16,7 @@ Templates are on **project** level, not **application** as it demonstrated in dj
 ## Static files
 
 ...
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
